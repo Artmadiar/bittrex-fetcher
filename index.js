@@ -1,9 +1,11 @@
 const fetch = require('node-fetch');
 const CronJob = require('cron').CronJob;
-const store = require('./store');
 
 // read env vars
 require('dotenv').config();
+
+const store = require('./store');
+
 
 // set urls
 const urls = {

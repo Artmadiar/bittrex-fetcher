@@ -1,3 +1,5 @@
+// read env vars
+require('dotenv').config();
 const db = require('./models');
 
 db.Market.count()
