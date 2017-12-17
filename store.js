@@ -27,7 +27,8 @@ module.exports.markets = (data) => {
  */
 module.exports.ticker = (Market, Currency, data) => {
   const code = `${Currency}-${Market.MarketCurrency}`;
-  if (!data) {
+
+  if (!data || !data.Bid || !data.Ask || !data.Last) {
     return Promise.resolve({});
   }
 

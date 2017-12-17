@@ -40,9 +40,8 @@ function getData() {
 let counts = 0;
 
 // make cron object and run it
-// const job = new CronJob('0 * * * * *', () => {
-//   getData();
-//   counts++;
-//   console.log('You got data. Time: ' + new Date() + '. Counter: ' + counts);
-// }, null, true);
-getData();
+const job = new CronJob('0 * * * * *', () => {
+  getData();
+  counts++;
+  console.log('Data was successfully got. Time: ' + new Date() + '. Counter: ' + counts);
+}, null, true);
