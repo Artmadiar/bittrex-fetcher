@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "cryptobot",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres",
+    "timezone": "UTC",
+    "poolSize": "30",
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "port": "5432",
+    "dialect": "postgres",
+    "timezone": "UTC",
+    "poolSize": "10",
+    "logging": false
+  }
+}
